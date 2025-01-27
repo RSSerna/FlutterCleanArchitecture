@@ -1,3 +1,2 @@
-# clean_code_flutter
-
-A new Flutter project.
+# FlutterCleanArchitecture
+This Repo is a Template for creating Clean Architecture Flutter Apps
