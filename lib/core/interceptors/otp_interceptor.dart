@@ -20,7 +20,7 @@ class OTPInterceptor extends Interceptor {
     debugPrint(
       'RESPONSE[${response.statusCode}] => PATH: ${response.requestOptions.path}',
     );
-    if (response.requestOptions.path == API.api_confirm_code) {
+    if (response.requestOptions.path == API.apiAuth) {
       secureOTPTempToken(token: response.data["token"]);
     }
     super.onResponse(response, handler);

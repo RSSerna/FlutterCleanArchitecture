@@ -10,19 +10,9 @@ final router = GoRouter(
   routes: [
     //Password
     GoRoute(
-      path: RouterPaths.password_forgotten,
+      path: RouterPaths.login,
       builder: (BuildContext context, GoRouterState state) =>
           const PasswordForgottenScreen(),
-    ),
-    GoRoute(
-      path: RouterPaths.change_password_from_profile,
-      builder: (BuildContext context, GoRouterState state) =>
-          const ChangePasswordFromProfileScreen(),
-    ),
-    GoRoute(
-      path: RouterPaths.change_forgotten_password,
-      builder: (BuildContext context, GoRouterState state) =>
-          const ChangeForgottenPasswordScreen(),
     ),
     //Language
     GoRoute(

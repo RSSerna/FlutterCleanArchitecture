@@ -27,7 +27,7 @@ class PasswordForgottenScreen extends StatelessWidget {
                     const _AppBar(),
                     _ImageAndInfo(size: size),
                     _EmailVerifyWidget(onAccepted: (token) {
-                      context.go(RouterPaths.change_forgotten_password);
+                      context.go(RouterPaths.login);
                     }),
                   ],
                 ),

@@ -17,7 +17,7 @@ class CleanRemoteDataSourceImpl implements CleanRemoteDataSource {
 
   @override
   Future<bool> restorePassword(String email) async {
-    await client.put(path: API.api_restore_password, body: email);
+    await client.put(path: API.apiAuth, body: email);
     return true;
   }
 
@@ -25,7 +25,7 @@ class CleanRemoteDataSourceImpl implements CleanRemoteDataSource {
   Future<bool> changePassword(
       CleanParams changePasswordParams, String email) async {
     await client.put(
-        path: API.api_change_password,
+        path: API.apiAuth,
         body: CleanModel(
                 email: email,
                 password: changePasswordParams.password,
